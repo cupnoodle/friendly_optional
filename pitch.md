@@ -66,7 +66,8 @@ This book will cover :
 4. How to handle optionals safely, using if let and etc
 5. Providing default values when the expected values aren't there
 6. Explaining various jargons (eg: optional binding, implicitly unwrapped optionals, etc)
-7. Using guard to make your code easier to understand
+7. Solving 'Unexpectedly found nil' error which relates to Storyboard UI (eg: nameLabel : UILabel! )
+8. Using guard to make your code easier to understand
 
 
 
