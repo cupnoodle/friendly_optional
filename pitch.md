@@ -16,6 +16,9 @@ It doesn't seem like a big deal until your app crashes and you are greeted with 
 
 
 
+What does nil mean? Why finding nil causes the program to crash?
+
+
 You asked online and some people suggested using **if let** and **guard let** to prevent the crash, but what does these mean?! Some suggested to never use the "**!**" symbol in code but Xcode complains when you don't do so : 
 
 ![mustBeUnwrapped](pitch_img/mustBeUnwrapped.png)
