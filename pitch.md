@@ -1,4 +1,4 @@
-# Why do I keep getting "Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value" ?! Aren't Swift supposed to be easy?
+# Why do I keep getting "Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value" ?! Isn't Swift supposed to be easy?
 
 
 
