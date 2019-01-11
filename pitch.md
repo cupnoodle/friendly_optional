@@ -48,6 +48,32 @@ You could finish the app idea that you have been wanting to work on, **submit it
 
 ## Understand how and why Optionals works and use it to your advantage
 
+Optionals are there for a reason, it's to help your code to deal with uncertainty (eg: what happens if the expected data doesn't appear?).
+
+
+
+When we don't understand how something works, we tend to get intimidated by it (eg: High school maths, how computer works, etc). But once we understand them, it will be easy to navigate around them and use it to help with our daily lives!
+
+
+
+## Learn the purpose of Optionals, and how to use them to aide your app development process with Friendly Optionals Book
+
+This book will cover :
+
+1. Why Optionals exist?
+2. How does Optionals work?
+3. Unwrapping Optionals forcefully
+4. How to handle optionals safely, using if let and etc
+5. Providing default values when the expected values aren't there
+6. Explaining various jargons (eg: optional binding, implicitly unwrapped optionals, etc)
+7. Using guard to make your code easier to understand
+
+
+
+By the end of this book, you would be confident with dealing optionals, befriend with optionals and feel glad that Optionals exist! 😝
+
+
+
 
 
 
