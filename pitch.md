@@ -48,7 +48,7 @@ You could finish the app idea that you have been wanting to work on, **submit it
 
 ## Understand how and why Optionals works and use it to your advantage
 
-Optionals are there for a reason, it's to help your code to deal with uncertainty (eg: what happens if the expected data doesn't appear?).
+Optionals are there for a reason, it's to help your code to deal with uncertainty (ie. nil / null values). eg: How should your code handle if the expected data doesn't appear?
 
 
 
