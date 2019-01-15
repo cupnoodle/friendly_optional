@@ -521,24 +521,25 @@ header, .context-menu, .megamenu-content, footer{
 
  /* cta */
  a.cta {
-    text-decoration: none;
-    background-color: #edac66;
-    color: #FFF;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border-radius: 5px;
+    color: #edac66;
  }
 
  a.cta:hover {
-    background-color: #d99d5e;
+    color: #d99d5e;
  }
 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h2><a name='header-n131' class='md-header-anchor '></a>Why do I keep getting &quot;Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value&quot; ?! Isn&#39;t Swift supposed to be easy?</h2><p>&nbsp;</p><!--<a href="#sample" class="cta">Get sample chapters</a>--><br><p>You set out to learn how to program iOS apps, you downloaded Xcode and followed several online tutorials to learn iOS development and it seems to go well with the tutorials. But once you start coding on your own, you start noticing some weird looking symbols like :</p><ol start='' ><li><strong>nameLabel: UILabel!</strong></li><li><strong>as! PersonTableViewCell</strong> </li><li><strong>name: String?</strong></li></ol><p>&nbsp;</p><p>It doesn&#39;t seem like a big deal until your app crashes and you are greeted with the scary &quot;<strong>Fatal error: Unexpectedly found nil while unwrapping an Optional value</strong>&quot; : </p><p><img src='pitch_img/classicError.png' alt='classicError' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>What does nil mean? Why finding nil causes the program to crash?
+<div  id='write'  class = 'is-mac'>
+    <div style="text-align:center; padding-left: auto; padding-right: auto;">
+        <img src="pitch_img/samplecover.png" />
+        <br><br>
+        <a href="#sample" class="cta">Get sample chapters</a>
+    </div>
+    <br><br>
+<h2><a name='header-n131' class='md-header-anchor '></a>
+Why do I keep getting &quot;Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value&quot; ?! Isn&#39;t Swift supposed to be easy?</h2><p>&nbsp;</p><p>You set out to learn how to program iOS apps, you downloaded Xcode and followed several online tutorials to learn iOS development and it seems to go well with the tutorials. But once you start coding on your own, you start noticing some weird looking symbols like :</p><ol start='' ><li><strong>nameLabel: UILabel!</strong></li><li><strong>as! PersonTableViewCell</strong> </li><li><strong>name: String?</strong></li></ol><p>&nbsp;</p><p>It doesn&#39;t seem like a big deal until your app crashes and you are greeted with the scary &quot;<strong>Fatal error: Unexpectedly found nil while unwrapping an Optional value</strong>&quot; : </p><p><img src='pitch_img/classicError.png' alt='classicError' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>What does nil mean? Why finding nil causes the program to crash?
 </p><p>You asked online and some people suggested using <strong>if let</strong> and <strong>guard let</strong> to prevent the crash, but what does these mean?! Some suggested to never use the &quot;<strong>!</strong>&quot; symbol in code but Xcode complains when you don&#39;t do so : </p><p><img src='pitch_img/mustBeUnwrapped.png' alt='mustBeUnwrapped' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>You Googled online, found some articles which provide fixes, but you still don&#39;t understand why those fixes work , and you&#39;re back to square one the next time you are greeted with the same &quot;Fatal error: Unexpectedly found nil&quot; error again. Worse, some of those article are outdated and the Swift syntax is different and you end up with more errors.</p><p>&nbsp;</p><p>And after a while, you just give up and use the &quot;Fix&quot; button provided by Xcode to make the error go away : </p><p><img src='pitch_img/autoFix.png' alt='autoFix' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>Wouldn&#39;t it be good if those funky symbols (&quot;?&quot;, &quot;!&quot;) doesn&#39;t exist? Instead of spending hours fighting with errors, you could focus on the fun part - building features for your app! Unfortunately, optionals are there in Swift, and with good reason, there&#39;s no way to avoid it, but we can understand it, be friend with it and use it to our advantage when building features!</p><p>&nbsp;</p><h2><a name='header-n156' class='md-header-anchor '></a>What if you could focus on the fun part - building features ?</h2><p>What if you are able to navigate through the symbols (<strong>?</strong> , <strong>!</strong> , <strong>as!</strong> ) easily? You could save hours trying to wrap your head around the errors and focus on your code. Imagine being able to indulge in building features you like and see the result appear in your phone, wouldn&#39;t that be great? </p><p>&nbsp;</p><p>You could finish the app idea that you have been wanting to work on, <strong>submit it to the App Store</strong>, and have a better resume for applying iOS developer positions.</p><p>&nbsp;</p><h2><a name='header-n162' class='md-header-anchor '></a>Understand how and why Optionals works and use it to your advantage</h2><p>Optionals are there for a reason, it&#39;s to help your code to deal with absence of values (nil / null values). eg: What should your code do if the expected data doesn’t appear?</p><p>&nbsp;</p><p>When we don&#39;t understand how something works, we tend to get intimidated by it (eg: High school maths, how computer works, etc). But once we understand them, it will be easy to navigate around them and use it to help with our daily lives!</p><p>&nbsp;</p><h2><a name='header-n187' class='md-header-anchor '></a>Learn the purpose of Optionals, and how to use them to aide your app development process with the book 'Understanding Optionals'</h2><p>This book will cover :</p><ol><li>Why Optionals exist?</li><li>How does Optionals work?</li><li>Unwrapping Optionals forcefully</li><li>How to handle optionals safely, using <strong>if let</strong> and <strong>chaining</strong></li><li>Providing default values when the expected values aren&#39;t there</li><li>Explaining various jargons (eg: optional binding, implicitly unwrapped optionals, etc)</li><li>Solving &#39;Unexpectedly found nil&#39; error which relates to Storyboard UI (eg: nameLabel : UILabel! )</li><li>Treating an object as another type safely</li></ol><p>&nbsp;</p><p>By the end of this book, you would be confident with dealing optionals and be able to utilize it to build your app feature safer.</p><p></p><br>
 <p>The handbook (+ bonus content) is currently half in progress, which is expected to finish and launch before February. Feel free to grab a sample chapter below (and also get into the waiting list where you will get extra content when the book launches). 😆</p>
 <br>
