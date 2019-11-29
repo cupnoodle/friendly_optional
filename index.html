@@ -1,17 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta property="og:title" content="Understanding Optionals" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="Learn the purpose of Optionals, and use them to aide your app development process with the book" />
-    <meta property="og:description" content="Learn the purpose of Optionals, and use them to aide your app development process with the book" />
-    <meta property="og:url" content="https://optionals.fluffy.es" />
-    <meta property="og:site_name" content="Understanding Optionals Book" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://optionals.fluffy.es/image/pack.png" />
-    <meta property='og:image:type' content='image/png' />
-    <meta property='og:image:width' content='387' />
-    <meta property='og:image:height' content='310' />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,6 +8,25 @@
     <link rel="stylesheet" href="style.css">
     
     <title>Understanding Optionals</title>
+    <meta property="og:title" content="Understanding Optionals & Delegate" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Understand how Optionals in Swift works, and also Delegate" />
+    <meta property="og:description" content="Understand how Optionals in Swift works, and also Delegate" />
+    <meta property="og:url" content="https://optionals.fluffy.es" />
+    <meta property="og:site_name" content="Understanding Optionals Book" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://optionals.fluffy.es/image/packsmall.png" />
+    <meta property='og:image:type' content='image/png' />
+    <meta property='og:image:width' content='352' />
+    <meta property='og:image:height' content='281' />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Understanding Optionals Book" />
+    <meta name="twitter:description" content="Understand how Optionals in Swift works, and also Delegate" />
+    <meta name="twitter:url" content="https://optionals.fluffy.es" />
+    <meta name="twitter:image" content="https://optionals.fluffy.es/image/packsmall.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Axel Kee" />
   </head>
   <body>
     <div class="wrapper" style="margin-top: 3rem;">
@@ -138,7 +146,11 @@
       </p>
       <br>
         <div style="text-align:center;">
-          <a class="cta2" style="line-height: 2.5;" href="https://gum.co/optionals" target="_blank">Get the book package for $19</a>
+          <a class="cta2" style="line-height: 2.5;" href="https://gum.co/optionals/darkmodefriday" target="_blank">Get the book package for <s>$19</s> $11.4</a>
+          <br>
+          <br>
+          <span style="font-weight: bold;">Black Friday 40% off discount expiring in</span><br>
+          <span id="countdown1"></span>
         </div>
       <br><br><br>
       <h2>What People Are Saying</h2>
@@ -175,7 +187,11 @@
         If using this book does not help you learn and understand optionals or delegate, let me know, within 30 Days of the date of your purchase, and I'll give you a complete refund. No argument. No risk. 100% guaranteed. You can contact me at <a href="mailto:axel@fluffy.es">axel@fluffy.es</a> .
       </p>
       <div style="text-align:center;">
-        <a class="cta2" style="line-height: 2.5;" href="https://gum.co/optionals" target="_blank">Get the book package for $19</a>
+        <a class="cta2" style="line-height: 2.5;" href="https://gum.co/optionals/darkmodefriday" target="_blank">Get the book package for <s>$19</s> $11.4</a>
+          <br>
+          <br>
+          <span style="font-weight: bold;">Black Friday 40% off discount expiring in</span><br>
+          <span id="countdown2"></span>
       </div>
       <br>
       <br>
@@ -200,6 +216,36 @@
       </p>
       <br><br><br>
     </div>
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("December 6, 2019 23:59:30 GMT+08:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+      // Get todays date and time
+      var now = new Date().getTime();
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the result in the element with id="demo"
+      var discountText = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds"; 
+      // + seconds + "s ";
+      document.getElementById("countdown1").innerHTML = discountText;
+      document.getElementById("countdown2").innerHTML = discountText;
+      
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        var endedText = "Discount expired 😢";
+        document.getElementById("countdown1").innerHTML = endedText;
+        document.getElementById("countdown2").innerHTML = endedText;
+      }
+    }, 1000);
+    </script>
 
     <script src="https://gumroad.com/js/gumroad.js"></script>
     <!-- Default Statcounter code for Optionals.fluffy.es
